@@ -1,5 +1,5 @@
 // Import C SQLite functions
-#if SWIFT_PACKAGE
+#if GRDBSQLITE
 import GRDBSQLite
 #elseif GRDBCIPHER
 import SQLCipher
@@ -219,7 +219,7 @@ class DatabasePoolTests: GRDBTestCase {
     }
     
     func testNumberOfThreads_asyncUnsafeRead() throws {
-#if SWIFT_PACKAGE
+#if GRDBSQLITE
         // Can't access getThreadsCount() C function
         throw XCTSkip("Thread count is not available")
 #else
@@ -259,7 +259,7 @@ class DatabasePoolTests: GRDBTestCase {
     }
     
     func testNumberOfThreads_asyncRead() throws {
-#if SWIFT_PACKAGE
+#if GRDBSQLITE
         // Can't access getThreadsCount() C function
         throw XCTSkip("Thread count is not available")
 #else

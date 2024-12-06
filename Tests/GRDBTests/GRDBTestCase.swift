@@ -1,5 +1,5 @@
 // Import C SQLite functions
-#if SWIFT_PACKAGE
+#if GRDBSQLITE
 import GRDBSQLite
 #elseif GRDBCIPHER
 import SQLCipher
@@ -215,7 +215,7 @@ class GRDBTestCase: XCTestCase {
     }
 }
 
-#if SWIFT_PACKAGE
+#if GRDBSQLITE
 let testBundle = Bundle.module
 #else
 let testBundle = Bundle(for: GRDBTestCase.self)

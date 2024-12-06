@@ -1,6 +1,6 @@
 #if SQLITE_ENABLE_SNAPSHOT || (!GRDBCUSTOMSQLITE && !GRDBCIPHER)
 // Import C SQLite functions
-#if SWIFT_PACKAGE
+#if GRDBSQLITE
 import GRDBSQLite
 #elseif GRDBCIPHER
 import SQLCipher
