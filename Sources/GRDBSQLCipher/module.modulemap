@@ -1,0 +1,4 @@
+module GRDBSQLCipher [system] {
+    header "shim.h"
+    export *
+}

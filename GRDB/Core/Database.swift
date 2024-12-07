@@ -3,6 +3,7 @@
 import GRDBSQLite
 #elseif GRDBCIPHER
 import SQLCipher
+import GRDBSQLCipher
 #elseif !GRDBCUSTOMSQLITE && !GRDBCIPHER
 import SQLite3
 #endif
